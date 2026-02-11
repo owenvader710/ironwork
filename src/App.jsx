@@ -7,11 +7,13 @@ import { AuthProvider, useAuth } from './context/AuthContext.jsx';
 import Sidebar from './components/layouts/sidebar.jsx';
 import Topbar from './components/layouts/header.jsx';
 
-import LoginPage from './pages/login.jsx';
-import DashboardPage from './pages/dashboard.jsx';
-import ProjectsPage from './pages/projects.jsx';
-import MyWorkPage from './pages/mywork.jsx';
-import MembersPage from './pages/members.jsx';
+import Login from "./pages/login.jsx";
+import Dashboard from "./pages/dashboard.jsx";
+import Projects from "./pages/projects.jsx";
+import MyWork from "./pages/my-work.jsx";
+import Members from "./pages/members.jsx";
+import NotFound from "./pages/not-found.jsx";
+
 
 function Protected({ children }) {
   const { currentUser } = useAuth();
